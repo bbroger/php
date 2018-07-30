@@ -5,7 +5,7 @@ define("BANCO_DE_DADOS", [
 	'root',
 	'password',
 	'test'
-], true);
+]);
 
 print_r (BANCO_DE_DADOS);
 
