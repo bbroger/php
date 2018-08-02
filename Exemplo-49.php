@@ -5,6 +5,7 @@ $dt = new Datetime();
 $periodo = new dateinterval("P15D");
 
 // caso queira adicionar um periodo na minha data tenho que criar um objeto da classe dateinterval e adicionar o valor que quero adicionar a minha data, "P" significa periodo, 15 é a quantidade e D significa dias, ou seja, juntando tudo da, "Periodo de 15 dias".
+// http://php.net/manual/pt_BR/class.dateinterval.php
 
 echo $dt-> format("d/m/Y H:i:s"), "<br>";
 
