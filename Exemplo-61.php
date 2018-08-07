@@ -33,7 +33,7 @@ class Pessoa {
 		echo $this->cpf;
 	}
 
-	// perceba que em determinado momento "depois de ter testado esta classe vazia e chamando a função "verDados" que ela herda de "pessoa"", ela funcionou normalmente" mas... agora eu copiei o metodo verDados pra cá, então quando eu chamar ele atraves do objeto "como ta na linha 42", o programa vai ver que ele existe aqui e vai dar preferencia pra ele, ou seja, quando eu chamar la agr, como ele ja existe aqui dentro, ele vai chamar esse "verDados" ao invés do que está na classe mãe dessa.
+	// perceba que em determinado momento "depois de ter testado esta classe vazia e chamando a função "verDados" que ela herda de "pessoa"", ela funcionou normalmente" mas... agora eu copiei o metodo verDados pra cá, então quando eu chamar ele atraves do objeto "como ta na linha 44", o programa vai ver que ele existe aqui e vai dar preferencia pra ele, ou seja, quando eu chamar la agr, como ele ja existe aqui dentro, ele vai chamar esse "verDados" ao invés do que está na classe mãe dessa.
 
 	// Vai ocorrer um erro, mas pq vai ocorrer? pq agr q ele ta aqui dentro, ele ta sendo chamado normalmente, porém, o ultimo atributo printado "$this->cpf", na classe mãe é privado, ou seja, ele não pode ser acessado nem pelas classes filhas, então é como se ela não tivesse acesso, por isso o erro.
 }
