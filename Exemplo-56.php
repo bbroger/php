@@ -84,10 +84,9 @@ $cpf->setNumero("06000830556");
 
 echo "<br>";
 
-var_dump($cpf->getNumero());
+//var_dump($cpf->getNumero());
 
-//var_dump (Documento::testeCPF("06000830556"));
-
+var_dump (Documento::testeCPF("06000830556"));
 
 
 
