@@ -26,10 +26,8 @@ class Diretor implements Valida {
 class Subordinado extends Diretor{
 
 	public function ponto (){
-
-		$d = $this->getNome();
-
-		echo $d;
+		
+		return $this->getNome();
 
 }
 }
@@ -38,7 +36,7 @@ $obj = new Subordinado();
 
 $obj->setNome("Luis Eduardo");
 
-$obj->ponto();
+echo $obj->ponto();
 
 
 
