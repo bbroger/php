@@ -12,9 +12,9 @@ class foda{
 	}
 }
 
-$obj = new foda();
-$obj->nunes = "João Pedro Cardoso";
-echo $obj-> printa("030.030.120-54");
+//$obj = new foda();
+//$obj->nunes = "João Pedro Cardoso";
+//echo $obj-> printa("030.030.120-54");
 
 
 ?>
