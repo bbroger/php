@@ -2,8 +2,8 @@
 
 require_once("config.php");
 
-//use Cliente\Cadastro;
-// aqui eu to usando o namespace/nomedoarquivo, atráves do comando "use", ou seja, ele vai buscar através desse caminho o meu arquivo la e vai passar a fazer tudo a partir dela.
+use Cliente\Cadastro;
+// aqui eu to usando o namespace\nomedoarquivo, atráves do comando "use", ou seja, ele vai buscar através desse caminho o meu arquivo la e vai passar a fazer tudo a partir dela.
 
 $cad = new Cadastro();
 
@@ -13,7 +13,7 @@ $cad->setSenha("12345678");
 
 
 
-//$cad->registrarVenda();
+$cad->registrarVenda();
 echo $cad;
 
 
