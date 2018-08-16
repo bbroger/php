@@ -7,6 +7,8 @@ $teste = $conn->prepare("INSERT INTO tb_usuarios (deslogin, desenha) VALUES (:LO
 $aa = "Pedro Alvares";
 $bb = "30302929430";
 
+//
+
 $teste->bindParam(":LOGIN", $aa);
 $teste->bindParam(":SENHA", $bb);
 
