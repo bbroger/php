@@ -1,6 +1,6 @@
 <?php
 
-$conn = new PDO("mysql:dbname=dbphp7;hosto=localhost", "root", "");
+$conn = new PDO("mysql:dbname=dbphp7;host=localhost", "root", "");
 
 $conn->beginTransaction();
 // perceba que pra iniciar a transação eu n preciso passar isso acima pra uma outra variavel e tal, é só chamar e acabou, e pra dar commit ou rollback é a mesma coisa
