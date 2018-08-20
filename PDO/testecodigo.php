@@ -1,9 +1,12 @@
 
+<form>
 <input type = "text" name = "Login">
 <input type = "number" name = "Senha">
-<input type = "submite" value = "Confirmar">
+<input type = "submit" value = "Confirmar">
 
 </form>
+
+<?php
 
 if (isset($_GET)){
 
@@ -12,12 +15,13 @@ foreach($_GET as $key => $value) {
 if (gettype($value)==='string'){
 
 $j = $value;
-
+return $j;
 }
 
-else () {
+else  {
 
-$i = $value
+$i = $value;
+return $i;
 
 }
 }
@@ -25,7 +29,7 @@ $i = $value
 
 $conn = new PDO ("mysql:dbname=dbphp7;host=localhost", "root", "");
 
-$teste = $conn->prepare("INSERT INTO tb_usuarios (deslogin, desenha) VALUES (?, ?));
+$teste = $conn->prepare("INSERT INTO tb_usuarios (deslogin, desenha) VALUES (?, ?)");
 
 $login = $j;
 $senha = $i;
@@ -36,3 +40,5 @@ echo "Dados Cadastrados com sucesso!";
 
 
 ?>
+
+
