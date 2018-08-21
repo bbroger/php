@@ -38,7 +38,7 @@ class Usuario {
 
 	public function loadById($id){
 
-		$obj = new sql();
+		$obj = new Sql();
 
 		$resultado = $obj->select("SELECT * FROM tb_usuarios WHERE :ID", array(
 			":ID"=>$id
