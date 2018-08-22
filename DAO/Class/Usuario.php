@@ -46,9 +46,18 @@ class Usuario {
 
 		if (count($resultado)>0){
 			//se for > 0 significa que tem algo no array, ou seja, deu certo e ele pegou algo.
+<<<<<<< HEAD
 			
 			// depois ele joga a linha no array na posição que ele retornou pra uma variavel
 		$this->setdata($resultado[0]);
+=======
+			$row = $resultado[0];
+			// depois ele joga a linha no array na posição que ele retornou pra uma variavel
+		$this->setIdusuario($row['idusuario']);
+		$this->setDeslogin($row['deslogin']);
+		$this->setDesenha($row['desenha']);
+		$this->setDtcadastro(New Datetime($row['dtcadastro']));
+>>>>>>> 053eb0e1210056d64d38778644e2473684cb0a57
 
 		// pq a chave ta com o nomr certinho e tal? pq quando ele me retorna um array, a minha chave vem com o nome da coluna, por isso ta dessa forma ai.
 		
@@ -77,6 +86,7 @@ class Usuario {
 		return $jj;
 	}
 
+<<<<<<< HEAD
 	public function setdata ($data){
 		$this->setIdusuario($data['idusuario']);
 		$this->setDeslogin($data['deslogin']);
@@ -85,6 +95,8 @@ class Usuario {
 
 	}
 
+=======
+>>>>>>> 053eb0e1210056d64d38778644e2473684cb0a57
 	public static function search($login){
      $sql = new Sql();
      $results = $sql->select("SELECT * FROM tb_usuarios WHERE deslogin LIKE :SEARCH ORDER BY deslogin", array(
@@ -99,7 +111,11 @@ class Usuario {
 
  	public function validacao($login, $password){
 
+<<<<<<< HEAD
  		$obj = new Sql();
+=======
+ 		$obj = new sql();
+>>>>>>> 053eb0e1210056d64d38778644e2473684cb0a57
 
 		$resultado = $obj->select("SELECT * FROM tb_usuarios WHERE deslogin = :LOGIN AND desenha = :PASSWORD", array(
 			":LOGIN"=>$login,
@@ -108,9 +124,18 @@ class Usuario {
 
 		if (count($resultado)>0){
 			//se for > 0 significa que tem algo no array, ou seja, deu certo e ele pegou algo.
+<<<<<<< HEAD
 
 			// depois ele joga a linha no array na posição que ele retornou pra uma variavel
 			$this->setdata($resultado[0]);
+=======
+			$row = $resultado[0];
+			// depois ele joga a linha no array na posição que ele retornou pra uma variavel
+		$this->setIdusuario($row['idusuario']);
+		$this->setDeslogin($row['deslogin']);
+		$this->setDesenha($row['desenha']);
+		$this->setDtcadastro(New Datetime($row['dtcadastro']));
+>>>>>>> 053eb0e1210056d64d38778644e2473684cb0a57
 	}
 
 		else {
@@ -121,6 +146,7 @@ class Usuario {
 
  	}
 
+<<<<<<< HEAD
  	public function Insert(){
 
  		$kilua = new Sql();
@@ -176,6 +202,8 @@ class Usuario {
 
 
 
+=======
+>>>>>>> 053eb0e1210056d64d38778644e2473684cb0a57
 }
 
 ?>
