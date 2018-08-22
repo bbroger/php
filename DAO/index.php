@@ -33,13 +33,12 @@ $password = $value;
 
 //echo json_encode($printar);
 
-<<<<<<< HEAD
-//$teste = new Usuario("Jorgae", "JJ123");
+//$teste = new Usuario("Teste", "55555555");
 //$teste->Insert();
 
 $teste = new Usuario();
 
-$teste->delete(3);
+//$teste->delete(3);
 //$teste->update("jorge", "malukete", 4);
 
 /*$login = "mudança";
@@ -51,31 +50,16 @@ $teste->update("UPDATE tb_usuarios SET deslogin = :LOGIN WHERE idusuario = :ID",
 */
 // devolve um usuario \/
 //$teste->loadByid(8);
-=======
-$teste = new Usuario();
-// devolve um usuario \/
-//$teste->loadByid(11);
->>>>>>> 053eb0e1210056d64d38778644e2473684cb0a57
 
 // com o toString la, vc pode printar o objeto direto, vai aparecer o que tiver dentro do escopo do __toString, não tente jogar o resultado pra uma variavel e printar ela, pois da erro.
 
 //echo $teste;
 // devolve uma lista de usuarios \/
-//$printando = Usuario::getList();
-<<<<<<< HEAD
+$printando = Usuario::getList();
 
-//echo json_encode($printando);
-
-//echo json_encode(Usuario::search("A"));
-=======
-
-//echo json_encode($printando);
+echo json_encode($printando);
 
 //echo json_encode(Usuario::search("A"));
-
-$teste->validacao($login, $password);
-echo $teste;
->>>>>>> 053eb0e1210056d64d38778644e2473684cb0a57
 
 /*if (isset($login) && $login != '') {
     $teste->validacao($login, $password);

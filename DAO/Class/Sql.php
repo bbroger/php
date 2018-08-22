@@ -46,7 +46,6 @@ class Sql extends PDO {
 		return $teste->fetchAll(PDO::FETCH_ASSOC);
 
 	}
-<<<<<<< HEAD
 		public function Insertin($rawQuery, $params = array())
 	{
 
@@ -59,9 +58,3 @@ class Sql extends PDO {
    }*/
 }
    ?>
-=======
-
-}
-
- ?>
->>>>>>> 053eb0e1210056d64d38778644e2473684cb0a57
