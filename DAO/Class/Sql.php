@@ -51,10 +51,9 @@ class Sql extends PDO {
 
 		$this->query($rawQuery, $params);
 }
-   /*public function ultimoID($rawQuery){
-
-      $teste = $this->query($rawQuery);
-      return $teste;
-   }*/
+public function getLastInsertId() {
+    return $this->conn->lastInsertId();
+    //o lastinsertid é difirente aqui, antes tinha last_insert_id, ja aqui é tudo junto mesmo dessa forma ai.
+}
 }
    ?>

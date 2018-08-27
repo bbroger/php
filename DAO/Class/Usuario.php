@@ -137,17 +137,20 @@ class Usuario {
  		$this->setDeslogin($login);
  		$this->setDesenha($senha);
  	}
- 	/*public function lastID(){
+ 	public function lastID(){
 
  		$kilua = new Sql();
 
-		$jj = $kilua->ultimoID("SELECT * FROM tb_usuarios WHERE idusuario = LAST_INSERT_ID()");
+	$results = $kilua->select("INSERT INTO tb_usuarios(deslogin, desenha) VALUES(:LOGIN, :PASSWORD);", array(
+	":LOGIN"=>$this->getDeslogin(),
+	":PASSWORD"=>$this->getDesenha()
+));
 
-		return $jj;
+	echo $kilua->getLastInsertId();
+	
+ 	}
 
 
-
- 	}*/
 
  	  public function update($login, $senha, $id){
 
