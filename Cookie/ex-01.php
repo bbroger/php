@@ -8,6 +8,6 @@ setcookie("Teste", json_encode($aa), time() + 360);
 
 // depois de ter feito isso, o cookie ja foi criado com o nome certinho... conteudo e tempo de expiração dboa, agora ele foi movido pra um array super global chamado $_COOKIE, que armazena TODOS os cookies feitos, portanto, pra chamar um determinado cookie é só vc usar o array super global $_COOKIE["nome do seu cookie"]; como ta no ex-02
 
-// obs: ele é parecido com seção... mas não é igual, ele tem um tempo determinado pra expirar tbm, mas esse tempo nós escolhemos, la em session é 20 min... aqui vc coloca o tempo que quiser e tbm tem outras...
+// obs: ele é parecido com seção... mas não é igual, ele tem um tempo determinado pra expirar tbm, mas esse tempo nós escolhemos, la em session é 20 min... aqui vc coloca o tempo que quiser... alem do cookie ser um arquivo fisico que grava informações...
 
 ?>
