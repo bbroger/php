@@ -10,6 +10,7 @@ require_once(insereDados.php);
 }
 else(){
 echo "Usuario não cadastrado";
+unlink(arquivo  gerado pelo java com extensão php);
 }
 } 
 ?>
