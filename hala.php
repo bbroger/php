@@ -42,5 +42,6 @@ unlink(arquivo com extensão php);
 
 obs: o arquivo gerado pelo java (semelhante a função fopen no php) tem que ser um arquivo php e conter um json com o codigo 
 da tag... (vc tem que vincular a tag com um usuario)
-
+obs: no video onde ta como funciona o rfid...  e tal, n precisa nem da verificação do if, é só gerar o aarquivo com o codigo que vier e eu faço
+a verificação no php, "veja se o codigo vem msm"
 obs: ver dps como o linkedin faz pra aparecer notificações no meu celular só por eu estar no logado no site por ele. 
