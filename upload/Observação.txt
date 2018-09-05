@@ -1,0 +1,1 @@
+Na pasta try tem um exemplo de upload com try catch, (caso dê erro ele manda email pra mim), forcei um erro la (n deixei criar o diretorio) só pra testar.

@@ -8,7 +8,7 @@
 
 <?php
 
-require_once("config.php");
+require_once("class/teste.php");
 
 
 
@@ -56,7 +56,10 @@ Nk($file, $dirUploads);
 
 echo $e->getName($file);
 
-}
+require_once("tt.php");
 
-}
+$obj = new email();
 
+$obj->send();
+}
+}
