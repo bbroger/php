@@ -3,7 +3,7 @@
 class email{
 
     public function send (){
-require_once("./vendor/autoload.php");
+require_once("vendor/autoload.php");
 
 //Create a new PHPMailer instance
 $mail = new PHPMailer\PHPMailer\PHPMailer();
