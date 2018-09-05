@@ -3,7 +3,7 @@
 class email{
 
     public function send (){
-require_once("./vendor/autoload.php");
+require_once("vendor/autoload.php");
 
 //Create a new PHPMailer instance
 $mail = new PHPMailer\PHPMailer\PHPMailer();
@@ -33,7 +33,7 @@ $mail->SMTPSecure = 'tls';
 $mail->SMTPAuth = true;
 
 //Username to use for SMTP authentication - use full email address for gmail
-$mail->Username = "Seu Email";
+$mail->Username = "Seu email";
 
 //Password to use for SMTP authentication
 $mail->Password = "Sua senha";
