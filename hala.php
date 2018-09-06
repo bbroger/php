@@ -47,6 +47,7 @@ unlink(arquivo com extensão php);
 // segunda tabela (filho) id do filho... nome do pai... data do cadastro...
 // terceira tabela, entrada e saida (com TODOS sem separar) ai na hora de mostrar no registro (no login do pai no site) vc coloca pra mostrar
 // apenas onde o id dele ta na tabela filho (select * from tb_filho where idpai = ...", dê um jeito de armazenar o iddopai no ato do login e jogar pra uma variavel
+// IDEIA pra armazenar o id do pai no ato do login, dê um select com o login e password dele (isso tbm testa se o login existe, dê uma olhada na classe usuario DAO, function validação, ali vc pode pegar o valor dboa
 //obs: o arquivo gerado pelo java (semelhante a função fopen no php) tem que ser um arquivo php e conter um json com o codigo 
 //da tag... (vc tem que vincular a tag com um usuario)
 //obs: no video onde ta como funciona o rfid...  e tal, n precisa nem da verificação do if, é só gerar o aarquivo com o codigo que vier e eu faço
