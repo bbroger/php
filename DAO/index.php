@@ -51,11 +51,11 @@ $teste->update("UPDATE tb_usuarios SET deslogin = :LOGIN WHERE idusuario = :ID",
 // devolve um usuario \/
 //$teste->loadByid(8);
 
-$teste->setDeslogin("Kias");
-$teste->setDesenha("123");
+//$teste->setDeslogin("Kias");
+//$teste->setDesenha("123");
 //$tt = lastID();
 
-echo $teste->lastID();
+//echo $teste->lastID();
 //echo $teste->getLastInsertId();
 
 // com o toString la, vc pode printar o objeto direto, vai aparecer o que tiver dentro do escopo do __toString, não tente jogar o resultado pra uma variavel e printar ela, pois da erro.
@@ -68,9 +68,9 @@ echo $teste->lastID();
 
 //echo json_encode(Usuario::search("A"));
 
-/*if (isset($login) && $login != '') {
+if (isset($login) && $login != '') {
     $teste->validacao($login, $password);
     echo $teste;
 }
-*/
+
 ?>
