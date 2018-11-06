@@ -1,0 +1,7 @@
+https://github.com/Nery37/php/blob/master/Email/index.php#L27
+
+https://github.com/Nery37/php/blob/master/RainTPL/email.php
+
+https://github.com/Nery37/php/blob/master/GD/ex-08.php
+
+https://github.com/Nery37/php/blob/master/Email/contents.html
