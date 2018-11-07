@@ -22,8 +22,8 @@ imagettftext($image, 62, 0, 80, 470, $titleColor, __DIR__ .DIRECTORY_SEPARATOR.'
 
 header("Content-type: image".DIRECTORY_SEPARATOR."jpeg");
 
-imagejpeg($image);
-//, "img".date("Y-m-d").".jpg", 80
+imagejpeg($image, "img".date("Y-m-d").".jpg", 80);
+
 
 imagedestroy($image)
 ?>
