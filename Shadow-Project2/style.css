@@ -115,19 +115,19 @@ body {
 
 /* Slides Background Color */
 .slide-1 {
-  background: #b1a494;
+  background-image:url(images/background-artwork.jpg);
   left: 0;
 }
 .slide-2 {
-  background: #a9785c;
+  background-image:url(images/background-artwork.jpg);
   left: 100%
 }
 .slide-3 {
-  background: #9ea6b3;
+  background-image:url(images/background-artwork.jpg);
   left: 200%
 }
 .slide-4 {
-  background: #b1a494;
+  background-image:url(images/background-artwork.jpg);
   left: 300%;
 }
 .slider {
@@ -142,7 +142,7 @@ body {
 
 /* Slider Inner Slide Effect */
 .slider h2 {
-  color: #000000;
+  color: #fcfcfc;
   font-weight: 900;
   text-transform: capitalize;
   font-size: 60px;
@@ -156,9 +156,9 @@ body {
 }
 
 .slider h4 {
-  font-size: 22px;
+  font-size: 25px;
   font-family: "Oswald";
-  color: #000000;
+  color: #fcfcfc;
   font-weight: bold;
   text-transform: uppercase;
   line-height: 1.2;
@@ -328,10 +328,10 @@ body {
 /* Responsive */
 @media only screen and (max-width: 768px) {
   .slider h2 {
-    font-size: 20px;
+    font-size: 25px;
   }
   .slider h4 {
-    font-size: 16px;
+    font-size: 20px;
   }
 
   .slider-content {
