@@ -169,16 +169,16 @@ body {
 
 .slider > img {
   position: absolute;
-  right: 29%;
-  bottom: 0;
-  height: 100%;
+  right: 8%;
+  bottom: 1;
+  height: 83%;
   opacity: 0;
   -webkit-transform: translateX(500px);
   transform: translateX(500px);
 }
 
 .slide-1 > img {
-  right: 28;
+  right: 10;
 }
 
 .buy-now-btn {
