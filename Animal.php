@@ -4,7 +4,7 @@ abstract class Animal {
 
 	public function falar (){
 
-		return "Som";
+		return "Soem";
 		}
 
 	public function mover (){
